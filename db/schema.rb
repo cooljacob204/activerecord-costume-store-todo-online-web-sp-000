@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 3) do
     t.boolean "still_in_business"
     t.datetime "opening_time"
     t.datetime "closing_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "costumes", force: :cascade do |t|
@@ -27,6 +29,8 @@ ActiveRecord::Schema.define(version: 3) do
     t.integer "price"
     t.integer "size"
     t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "haunted_houses", force: :cascade do |t|
@@ -38,6 +42,8 @@ ActiveRecord::Schema.define(version: 3) do
     t.datetime "opening_time"
     t.datetime "closing_time"
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
